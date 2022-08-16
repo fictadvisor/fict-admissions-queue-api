@@ -1,0 +1,36 @@
+{
+  "name": "fict-admissions-queue-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./dist",
+    "start": "node ./dist/index.js",
+    "start:debug": "env LOG_LEVEL=debug node ./dist/index.js",
+    "dev": "npm run clean && npm run build && npm run start:debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/async": "^3.2.3",
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.6",
+    "@types/express-validator": "^3.0.0",
+    "@types/node": "^14.0.13",
+    "@types/winston": "^2.4.4",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "glob": "^7.1.6",
+    "pg": "^8.2.1",
+    "typeorm": "^0.2.25",
+    "winston": "^3.2.1"
+  }
+}
